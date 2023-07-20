@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | @wjbetech</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Victor+Mono:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    <!-- sidebar -->
+    <div class="sidebar">
+        <a href="#" class="logo">
+            <i id="icon sidebar-head-icon" class='bx bx-code-curly bx-md'></i>
+            <div class="logo-name">@<span class="logo-span">wjbe</span>tech</div>
+        </a>
+        <ul class="side-menu-top">
+            <li><a href="#"><i class='bx bxs-dashboard bx-md bx-fw'></i>Dashboard</a></li>
+            <li><a href="#"><i class='bx bx-store bx-md bx-fw' ></i>Store</a></li>
+            <li class="active"><a href="#"><i class='bx bx-analyse bx-md bx-fw'></i>Analyse</a></li>
+            <li><a href="#"><i class='bx bx-chat bx-md bx-fw'></i>Support</a></li>
+            <li><a href="#"><i class='bx bx-user-circle bx-md bx-fw'></i>Users</a></li>
+            <li><a href="#"><i class='bx bx-cog bx-md bx-fw'></i>Settings</a></li>
+        </ul>
+        <ul class="side-menu-bottom">
+            <li>
+                <a href="#" class="logout">
+                    <i class='bx bx-log-out bx-md bx-fw'></i>Logout</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- main -->
+    <div class="content">
+        <!-- navbar -->
+        <nav>
+            <i class='bx bx-menu bx-md'></i>
+            <form action="#">
+                <div class="form-input">
+                    <input 
+                        type="search"
+                        placeholder="Search.."
+                    >
+                    <button 
+                        class="search-btn"
+                        type="submit"
+                    >
+                    <i class='bx bx-search bx-sm'></i>
+                    </button>
+                </div>
+            </form>
+            <input type="checkbox" name="theme-toggle" id="theme-toggle" hidden>
+            <label for="theme-toggle" class="theme-toggle"></label>
+            <a href="#" class="notification">
+                <i class='bx bx-bell bx-md'></i>
+                <span class="count">12</span>
+            </a>
+            <a href="#" class="profile">
+                <img class="nav-profile-img" src="images/wjbetech-logo.png" alt="logo">
+            </a>
+        </nav>
+        
+        <!-- main content -->
+        <main>
+            <div class="header">
+                <div class="left">
+                    <h1>Dashboard</h1>
+                    <ul class="breadcrumb">
+                        <li><a href="#">
+                            Analytics   /
+                        </a></li>
+                        <li><a href="#" class="active">
+                            Shop
+                        </a></li>
+                    </ul>
+                </div>
+                <a href="#" class="report">
+                    <i class='bx bx-cloud-download bx-md'></i>
+                    <span>Download CSV</span>
+                </a>
+            </div>
+
+            <!-- insights -->
+
+            <ul class="insights">
+                <li>
+                    <i class='bx bx-calendar-check bx-sm' ></i>
+                    <span class="info">
+                        1,074
+                    </span>
+                    <p>Paid Order</p>
+                </li>
+                <li>
+                    <i class='bx bx-show bx-sm' ></i>
+                        4,395
+                    </span>
+                    <p>Site Visits</p>
+                </li>
+                <li>
+                    <i class='bx bx-line-chart bx-sm' ></i>
+                    <span class="info">
+                        9,389
+                    </span>
+                    <p>Searches</p>
+                </li>
+                <li>
+                    <i class='bx bx-money-withdraw bx-sm' ></i>
+                    <span class="info">
+                        $102,496
+                    </span>
+                    <p>Total Sales</p>
+                </li>
+            </ul>
+
+            <!-- bottom-data -->
+            <div class="bottom-data">
+                <div class="orders">
+                    <div class="header">
+                        <i class='bx bx-receipt bx-sm' ></i>
+                        <h3>Recent Orders</h3>
+                        <i class='bx bx-filter-alt bx-sm' ></i>
+                        <i class='bx bx-search bx-sm' ></i>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>User:</th>
+                                <th>Order Date:</th>
+                                <th>Status:</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                <p>John Doe</p> 
+                                </td>
+                                <td>
+                                    13/07/2023
+                                </td>
+                                <td>
+                                    <span class="status complete">
+                                        Complete
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                <p>Sarah Smith</p> 
+                                </td>
+                                <td>
+                                    11/07/2023
+                                </td>
+                                <td>
+                                    <span class="status pending">
+                                        Pending
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                <p>Jeremy Hunt</p> 
+                                </td>
+                                <td>
+                                    14/07/2023
+                                </td>
+                                <td>
+                                    <span class="status processing">
+                                        Processing
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- reminders -->
+                <div class="reminders">
+                    <div class="header">
+                        <i class='bx bx-notepad bx-sm'></i>
+                        <h3>Reminders</h3>
+                        <i class='bx bx-filter bx-sm' ></i>
+                        <i class='bx bx-plus bx-sm' ></i>
+                    </div>
+                    <ul class="task-list">
+                        <li class="completed">
+                            <div class="task-title">
+                                <i class='bx bx-calendar-event bx-sm' ></i>
+                                <p>Start Our Meeting</p>
+                            </div>
+                        </li>
+                        <li class="completed">
+                            <div class="task-title">
+                                <i class='bx bx-calendar-event bx-sm' ></i>
+                                <p>Analyse Our Website</p>
+                            </div>
+                        </li>
+                        <li class="not-completed">
+                            <div class="task-title">
+                                <i class='bx bx-calendar-event bx-sm' ></i>
+                                <p>After-work Code Event </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                
+
+            </div>
+
+
+        </main>
+        
+
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
