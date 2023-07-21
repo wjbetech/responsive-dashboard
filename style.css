@@ -43,9 +43,10 @@ html {
 }
 
 body.dark {
-    --light: #1811ae;
+    --light: #494949;
     --light-gray: #25252c;
-    --dark-grey: #fbfbfb;
+    --dark-grey: #2e2e2e;
+    color: antiquewhite
 }
 
 body {
@@ -55,6 +56,7 @@ body {
 
 a .logo {
     display: flex;
+    margin-left: 10px;
 }
 
 .bx {
@@ -92,7 +94,7 @@ a .logo {
 }
 
 .sidebar .logo {
-    width: 92%;
+    width: 100%;
     font-weight: 500;
     font-size: 24px;
     height: 100px;
@@ -105,14 +107,12 @@ a .logo {
     margin-bottom: 50px;
 }
 
-.sidebar .logo .logo-name span {
-    color: var(--dark-gray)
-}
-
 .sidebar .logo .bx {
     min-width: 60px;
     display: flex;
     justify-content: center;
+    text-align: center;
+    margin-left: 17px;
 }
 
 .sidebar .side-menu-bottom {
